@@ -33,6 +33,14 @@ backend/     FastAPI app: core/ (shared infra), modules/<name>/ (ctrl, service, 
 frontend/    React app (follow the react-frontend-app skill, see below)
 ```
 
+### UI Components. 
+
+All components buitld and saved in a /home/zero/workspace/ui-ux-collections/components/<COMPONENT_NAME>/<FRONT_END_LIBRARY> eg: (React, React native),  in this location,
+You are alowed to read this folders. No permission needed. 
+1. Do not write a new components, just copy paste this files to build. 
+2. Search this component already exists, before building any new UI component
+3. /home/zero/workspace/ui-ux-collections/manifest.json - This file have a also manifest of component name and props
+
 ### Rules for building this codebase
 
 **General**
