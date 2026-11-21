@@ -88,11 +88,12 @@ plan/
 ├── AGENTS.md              # Instructions for AI agents working on / using this repo
 ├── backend/               # FastAPI application (planned)
 │   ├── app/
-│   │   ├── api/           # Route handlers
-│   │   ├── core/          # Config, settings
-│   │   ├── services/      # Plan/skill parsing, execution runner
-│   │   └── models/        # Pydantic schemas
+│   │   ├── core/          # Shared infrastructure (config, errors, db, security)
+│   │   └── modules/       # One folder per business module
+│   │       └── <name>/    # <name>_ctrl, _service, _helper, _utils, _schema
 │   └── tests/
+│       ├── core/
+│       └── modules/<name>/
 ├── frontend/              # React application (planned)
 │   └── src/
 ├── plans/                 # Saved plan documents (markdown)

@@ -29,7 +29,7 @@ Two roles, keep them separate:
 ```
 plans/       saved plan documents (markdown) — data, not code
 skills/      skill library — <name>/SKILL.md (+ references/)
-backend/     FastAPI app: api/ (routes), services/ (logic), models/ (Pydantic), core/ (config)
+backend/     FastAPI app: core/ (shared infra), modules/<name>/ (ctrl, service, helper, utils, schema)
 frontend/    React app (follow the react-frontend-app skill, see below)
 ```
 
