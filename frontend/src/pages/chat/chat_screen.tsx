@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { CHAT_SIDEBAR_CATEGORIES } from "./chat_ctrl";
 import type { ChatMessage } from "./chat_ctrl";
 import { ChatUi } from "./chat_ui";
 
@@ -20,7 +19,6 @@ export function ChatScreen() {
     <ChatUi
       messages={messages}
       draft={draft}
-      sidebarCategories={CHAT_SIDEBAR_CATEGORIES}
       canSend={canSend}
       onDraftChange={setDraft}
       onSend={handleSend}
